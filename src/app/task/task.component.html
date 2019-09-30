@@ -1,0 +1,20 @@
+<!-- <p>task works!</p> -->
+<h1>Tasks</h1>
+<hr color="red">
+<p>Search <input type="text" [(ngModel)]="search" placeholder="search task here">
+    &nbsp;<span (click)="create()"> Create
+        new task</span> </p>
+<table>
+    <tr>
+        <!-- <th>UserId</th> -->
+        <th>Id</th>
+        <th>Title</th>
+        <!-- <th>Completed</th> -->
+    </tr>
+    <tr *ngFor='let data of datas|filter:search'>
+        <!-- <td>{{data.userId}}</td> -->
+        <td>{{data.id}}</td>
+        <td>{{data.title}}</td>
+        <!-- <td>{{data.completed}}</td> -->
+    </tr>
+</table>

@@ -1,0 +1,7 @@
+<!-- <p>album1 works!</p> -->
+<h1>The Photos</h1>
+<hr color="red">
+<span *ngFor="let a of totalphotos" (click)="showphotos(a)">
+    <p>{{a.title}}</p>
+    <img src="{{a.thumbnailUrl}}">
+</span>

@@ -1,0 +1,12 @@
+table,tr,td,th{
+    border: solid black 1px;
+    border-collapse: collapse;
+    margin-left: 5px;
+}
+th{
+    font-size: 25px;
+    align-content: center;
+}
+h1,p{
+    margin-left: 5px;
+}
